@@ -1,0 +1,16 @@
+
+do
+    case $1 in
+    -f|--follow)
+    local FOLLOW="following"
+    ;;
+    -t|--tail)
+    local TAIL="tail=$2"
+    ;;
+    esac
+    shift
+    done
+
+    echo "FOLLOW: $FOLLOW"
+    echo "TAIL: $TAIL"
+}
